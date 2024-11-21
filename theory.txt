@@ -1,0 +1,53 @@
+Q1.
+Main characteristics of are-
+    1. dynamic typing - this means we dont need to declare the type of variable when we create it. It will determined at run-time.
+    2. single-threaded - javascript is a single threaded language which means there is one thread of execution and tasks are processed one at a time.
+    3. non-blocking - this means javascript has the ability to perform asynchronous tasks without blocking the execution of the program. this is acheived using callbacks, promises, async/await and event loop.
+    4. Just-in-time - this means that the code is compiled into machine code at run time for faster execution.
+    5. garbage collection -  this means that javascript automatically handles allocation and deallocation of memory which helps prevent memory usage and improves performance.
+
+Q2.
+    1. Serverless Application Development - Serverless computing is a cloud-based development that allows front-end developers to create server applications without running their servers or managing infrastructure.
+    Services to use: 1. AWS Lambda
+                     2. Google Could Functions
+                     3. Azure Functions
+
+    2. Data Visualization - One of the uses for JavaScript is data visualization, or creating visual representations of data using code. For example, many people use D3.js to create interactive graphs, charts, and maps that update in real-time based on revised data sets.
+    Features of D3 - 
+        1. D3.js lets developers turn raw data into responsive and interactive 2D and 3D graphs, charts, and maps that update as new data is entered.
+        2.  You can even create animated GIFs using D3.js.
+        3. D3 works with all data types and can make beautiful, responsive visualizations that communicate information in a way words never could.
+
+    3. Blockchain Development - JavaScript plays a significant role in blockchain software development by providing a range of capabilities tailored for decentralized apps.
+    Frameworks to use:
+        1. Web3.js is a JavaScript library that facilitates interaction with the Ethereum blockchain, such as deploying smart contracts, sending transactions, and reading data.
+        2. Well-known frameworks like React, Angular, or Vue.js are commonly used to create user interfaces that interact with blockchain networks.
+        3. Maximizing the potential of libraries like D3.js is an effective way to achieve blockchain data visualization.
+
+Q4. 
+JavaScript engines uses several high-level techniques to optimize code execution. Some of them are-
+    1. Just-in-Time compilation - It involves the same two processes as regular compilation, but here the machine code isn’t written into a binary file. The code is also executed right away after compilation.
+        Source code -------------> Machine code ----------> Output
+                    -compilation-               -execution-
+    This includes three steps - 
+        1. Parsing - It converts JavaScript code into Abstract Tree Syntax
+        2. Compilation - code is compiled
+        3. Optimization - optimises code into highly efficient code
+    2. Function inlining - The process of replacing a function call with the actual code of the function.
+    3. Dead code elimination - The engine analyzes the code and removes parts that do not affect the program's output, reducing the amount of code that needs to be executed.\
+    4. Garbage Collection - Automatic memory management to reclaim memory used by objects that are no longer needed.
+
+Q6.
+Stack overflow - it occurs when the number of function calls added to the stack increases the stack’s maximum limit. the maximum size of call stack is not fixed and depends on the environment. one such example of stack overflow is recursion where a function call itself infinitely with no terminating condition causing the call stack to overflow and it leads to error.
+eg, 
+function recursion(){ 
+    recursion(); //a function calling itself 
+}
+recursion();
+
+Q8.
+Accessing a `let` or `const` variable before declaration results in a reference error because they are in TDZ(Temporal Dead Zone). It happens because they remain uninitialized until the execution reaches their declaration. 
+- In the uninitialized state, any attempt to access the let or const variable results in a ReferenceError.
+- This ensures that variables cannot be used before they are declared and initialized, enforcing a more predictable and safer code execution.
+- It makes the code easier to reason about, as variables are guaranteed to be initialized when they are first accessed.
+
