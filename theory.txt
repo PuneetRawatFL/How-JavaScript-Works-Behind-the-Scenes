@@ -1,4 +1,5 @@
-Q1.
+Q1. Write a summary explaining the main characteristics of JavaScript (e.g., dynamic typing, single-threaded, non-blocking).
+
 Main characteristics of are-
     1. dynamic typing - this means we dont need to declare the type of variable when we create it. It will determined at run-time.
     2. single-threaded - javascript is a single threaded language which means there is one thread of execution and tasks are processed one at a time.
@@ -6,7 +7,8 @@ Main characteristics of are-
     4. Just-in-time - this means that the code is compiled into machine code at run time for faster execution.
     5. garbage collection -  this means that javascript automatically handles allocation and deallocation of memory which helps prevent memory usage and improves performance.
 
-Q2.
+Q2.Research and list at least three use cases where JavaScript is essential.
+
     1. Serverless Application Development - Serverless computing is a cloud-based development that allows front-end developers to create server applications without running their servers or managing infrastructure.
     Services to use: 1. AWS Lambda
                      2. Google Could Functions
@@ -24,7 +26,8 @@ Q2.
         2. Well-known frameworks like React, Angular, or Vue.js are commonly used to create user interfaces that interact with blockchain networks.
         3. Maximizing the potential of libraries like D3.js is an effective way to achieve blockchain data visualization.
 
-Q4. 
+Q4. Explain how the JavaScript engine optimizes code execution
+
 JavaScript engines uses several high-level techniques to optimize code execution. Some of them are-
     1. Just-in-Time compilation - It involves the same two processes as regular compilation, but here the machine code isn’t written into a binary file. The code is also executed right away after compilation.
         Source code -------------> Machine code ----------> Output
@@ -37,7 +40,8 @@ JavaScript engines uses several high-level techniques to optimize code execution
     3. Dead code elimination - The engine analyzes the code and removes parts that do not affect the program's output, reducing the amount of code that needs to be executed.\
     4. Garbage Collection - Automatic memory management to reclaim memory used by objects that are no longer needed.
 
-Q6.
+Q6. - Explain what happens when a stack overflow occurs.
+
 Stack overflow - it occurs when the number of function calls added to the stack increases the stack’s maximum limit. the maximum size of call stack is not fixed and depends on the environment. one such example of stack overflow is recursion where a function call itself infinitely with no terminating condition causing the call stack to overflow and it leads to error.
 eg, 
 function recursion(){ 
@@ -45,7 +49,8 @@ function recursion(){
 }
 recursion();
 
-Q8.
+Q8. - Explain why accessing a `let` or `const` variable before declaration results in a reference error.
+
 Accessing a `let` or `const` variable before declaration results in a reference error because they are in TDZ(Temporal Dead Zone). It happens because they remain uninitialized until the execution reaches their declaration. 
 - In the uninitialized state, any attempt to access the let or const variable results in a ReferenceError.
 - This ensures that variables cannot be used before they are declared and initialized, enforcing a more predictable and safer code execution.
